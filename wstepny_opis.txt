@@ -1,0 +1,12 @@
+Autor: Mariusz Koz³owski mariusza.kozlowskiego@gmail.com
+Temat: Ksi¹¿ka adresowa
+Funkcjonalnoœci:
+1. dodawanie adresata
+2. usuwanie adresata
+3. edycja danych
+4. sortowanie
+5. filtrowanie
+6. import/eksport z/do excela
+7. generowanie korespondencji seryjnej dla adresatów z ksi¹¿ki
+8. zmiana wzoru listu do korespondencji seryjnej
+Wzorzec projektowy MVVM.
