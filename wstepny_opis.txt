@@ -1,4 +1,15 @@
 Autor: Mariusz Koz³owski mariusza.kozlowskiego@gmail.com
+
+Temat: Aplikacja do typowania wyników meczów ¿u¿lowych
+Funkcjonalnoœci:
+1. logowanie
+2. dodawanie u¿ytkowników
+3. dodawanie meczów
+4. typowanie wyników
+5. dodawanie wyników meczów
+6. zliczanie punktów
+7. klasyfikacja
+
 Temat: Ksi¹¿ka adresowa
 Funkcjonalnoœci:
 1. dodawanie adresata
