@@ -1,0 +1,41 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ViewModels="clr-namespace:SpeedwayBetting.ViewModels" x:Class="SpeedwayBetting.Views.AddResultControl" 
+             Background="White"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.DataContext>
+            <ViewModels:AddResultViewModel/>
+        </Grid.DataContext>
+        <TextBlock Grid.ColumnSpan="4"
+			FontSize="20"
+			Text="Add result"
+			TextAlignment="Center"
+			TextWrapping="Wrap" />
+        <DataGrid Margin="0,30,0,60.338"
+			AutoGenerateColumns="False"
+			HeadersVisibility="Column"
+			IsReadOnly="True"
+			ItemsSource="{Binding MatchList}"
+			SelectedItem="{Binding SelectedMatch}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" Binding="{Binding ID}" Header="ID" Visibility="Hidden"/>
+                <DataGridTextColumn Width="*" Binding="{Binding Hosts}" Header="Hosts" />
+                <DataGridTextColumn Width="*" Binding="{Binding Visitors}" Header="Visitors" />
+                <DataGridTextColumn Width="*" Binding="{Binding Result}" Header="Result" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Result:" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="23" Margin="55,250,0,0"
+            IsEditable ="False"
+            ItemsSource="{Binding ResultsList}"
+            SelectedItem="{Binding ResultToAdd}"
+            />
+        <Button Content="Add re_sult" HorizontalAlignment="Left" Margin="190,250,0,0" VerticalAlignment="Top" Width="75"
+			Command="{Binding AddResultCommand}"/>
+    </Grid>
+</UserControl>

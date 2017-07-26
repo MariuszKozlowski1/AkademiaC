@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SpeedwayBettingModelStoreContainer" CdmEntityContainer="SpeedwayBettingEntities">
+    <EntitySetMapping Name="tblBets">
+      <EntityTypeMapping TypeName="SpeedwayBettingModel.tblBets">
+        <MappingFragment StoreEntitySet="tblBets">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="MatchID" ColumnName="MatchID" />
+          <ScalarProperty Name="Bet" ColumnName="Bet" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMatches">
+      <EntityTypeMapping TypeName="SpeedwayBettingModel.tblMatches">
+        <MappingFragment StoreEntitySet="tblMatches">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Hosts" ColumnName="Hosts" />
+          <ScalarProperty Name="Visitors" ColumnName="Visitors" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUsers">
+      <EntityTypeMapping TypeName="SpeedwayBettingModel.tblUsers">
+        <MappingFragment StoreEntitySet="tblUsers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

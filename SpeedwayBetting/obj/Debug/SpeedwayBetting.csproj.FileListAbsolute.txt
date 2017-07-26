@@ -1,0 +1,118 @@
+c:\users\n118608\documents\visual studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\bin\Debug\SpeedwayBetting.exe.config
+c:\users\n118608\documents\visual studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\bin\Debug\SpeedwayBetting.exe
+c:\users\n118608\documents\visual studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\bin\Debug\SpeedwayBetting.pdb
+c:\users\n118608\documents\visual studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.csprojResolveAssemblyReference.cache
+c:\users\n118608\documents\visual studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\App.g.cs
+c:\users\n118608\documents\visual studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting_MarkupCompile.cache
+c:\users\n118608\documents\visual studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.g.resources
+c:\users\n118608\documents\visual studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.Properties.Resources.resources
+c:\users\n118608\documents\visual studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.csproj.GenerateResource.Cache
+c:\users\n118608\documents\visual studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.exe
+c:\users\n118608\documents\visual studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.pdb
+C:\Users\n118608\Documents\Visual Studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\MainWindow.baml
+C:\Users\n118608\Documents\Visual Studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\MainWindow.g.cs
+C:\Users\n118608\Documents\Visual Studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserLoginControl.baml
+C:\Users\n118608\Documents\Visual Studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserLoginControl.g.cs
+C:\Users\n118608\Documents\Visual Studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\n118608\Documents\Visual Studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting_MarkupCompile.lref
+C:\Users\n118608\Documents\Visual Studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserRegistrationControl.baml
+C:\Users\n118608\Documents\Visual Studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserRegistrationControl.g.cs
+C:\Users\n118608\Documents\Visual Studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddMatchControl.baml
+C:\Users\n118608\Documents\Visual Studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddMatchControl.g.cs
+C:\Users\n118608\Documents\Visual Studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddResultControl.baml
+C:\Users\n118608\Documents\Visual Studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddResultControl.g.cs
+C:\Users\n118608\Documents\Visual Studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\BetControl.g.cs
+C:\Users\n118608\Documents\Visual Studio 2012\Projects\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\BetControl.baml
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\bin\Debug\SpeedwayBetting.exe.config
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.exe
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.pdb
+E:\SpeedwayBetting\SpeedwayBetting\bin\Debug\SpeedwayBetting.exe.config
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.exe
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.pdb
+E:\SpeedwayBetting\SpeedwayBetting\bin\Debug\SpeedwayBetting.exe
+E:\SpeedwayBetting\SpeedwayBetting\bin\Debug\SpeedwayBetting.pdb
+E:\SpeedwayBetting\SpeedwayBetting\bin\Debug\EntityFramework.dll
+E:\SpeedwayBetting\SpeedwayBetting\bin\Debug\EntityFramework.SqlServer.dll
+E:\SpeedwayBetting\SpeedwayBetting\bin\Debug\EntityFramework.xml
+E:\SpeedwayBetting\SpeedwayBetting\bin\Debug\EntityFramework.SqlServer.xml
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.csprojResolveAssemblyReference.cache
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserLoginControl.baml
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserRegistrationControl.baml
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddMatchControl.g.cs
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddResultControl.g.cs
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\BetControl.g.cs
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\MainWindow.g.cs
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserLoginControl.g.cs
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserRegistrationControl.g.cs
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\App.g.cs
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting_MarkupCompile.cache
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting_MarkupCompile.lref
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddMatchControl.baml
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddResultControl.baml
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\BetControl.baml
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\MainWindow.baml
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.g.resources
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.Properties.Resources.resources
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.csproj.GenerateResource.Cache
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\ResultsControl.baml
+E:\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\ResultsControl.g.cs
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\bin\Debug\SpeedwayBetting.exe
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\bin\Debug\SpeedwayBetting.pdb
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\bin\Debug\EntityFramework.dll
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\bin\Debug\EntityFramework.xml
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.csprojResolveAssemblyReference.cache
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddMatchControl.g.cs
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddResultControl.g.cs
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\BetControl.g.cs
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\MainWindow.g.cs
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\ResultsControl.g.cs
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserLoginControl.g.cs
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserRegistrationControl.g.cs
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\App.g.cs
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting_MarkupCompile.cache
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting_MarkupCompile.lref
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddMatchControl.baml
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddResultControl.baml
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\BetControl.baml
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\MainWindow.baml
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\ResultsControl.baml
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserLoginControl.baml
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserRegistrationControl.baml
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.g.resources
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.Properties.Resources.resources
+C:\Users\konto\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.csproj.GenerateResource.Cache
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\bin\Debug\SpeedwayBetting.exe.config
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.exe
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.pdb
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\bin\Debug\SpeedwayBetting.exe
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\bin\Debug\SpeedwayBetting.pdb
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\bin\Debug\EntityFramework.dll
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\bin\Debug\EntityFramework.xml
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.csprojResolveAssemblyReference.cache
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddMatchControl.g.cs
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddResultControl.g.cs
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\BetControl.g.cs
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\MainWindow.g.cs
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\ResultsControl.g.cs
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserLoginControl.g.cs
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserRegistrationControl.g.cs
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\App.g.cs
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting_MarkupCompile.cache
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting_MarkupCompile.lref
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddMatchControl.baml
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\AddResultControl.baml
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\BetControl.baml
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\MainWindow.baml
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\ResultsControl.baml
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserLoginControl.baml
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\Views\UserRegistrationControl.baml
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.g.resources
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.Properties.Resources.resources
+C:\Users\n118608\Desktop\SpeedwayBetting\SpeedwayBetting\obj\Debug\SpeedwayBetting.csproj.GenerateResource.Cache

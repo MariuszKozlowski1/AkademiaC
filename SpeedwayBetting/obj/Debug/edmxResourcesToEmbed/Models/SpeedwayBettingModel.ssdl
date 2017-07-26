@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SpeedwayBettingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblBets">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="MatchID" Type="int" Nullable="false" />
+    <Property Name="Bet" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="Points" Type="int" />
+  </EntityType>
+  <EntityType Name="tblMatches">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Hosts" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Visitors" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Result" Type="nvarchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="tblUsers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_MatchID">
+    <End Role="tblMatches" Type="Self.tblMatches" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblBets" Type="Self.tblBets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMatches">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblBets">
+        <PropertyRef Name="MatchID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserID">
+    <End Role="tblUsers" Type="Self.tblUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblBets" Type="Self.tblBets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUsers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblBets">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SpeedwayBettingModelStoreContainer">
+    <EntitySet Name="tblBets" EntityType="Self.tblBets" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMatches" EntityType="Self.tblMatches" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUsers" EntityType="Self.tblUsers" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_MatchID" Association="Self.FK_MatchID">
+      <End Role="tblMatches" EntitySet="tblMatches" />
+      <End Role="tblBets" EntitySet="tblBets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserID" Association="Self.FK_UserID">
+      <End Role="tblUsers" EntitySet="tblUsers" />
+      <End Role="tblBets" EntitySet="tblBets" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

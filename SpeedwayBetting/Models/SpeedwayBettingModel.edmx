@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SpeedwayBettingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblBets">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="MatchID" Type="int" Nullable="false" />
+          <Property Name="Bet" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="Points" Type="int" />
+        </EntityType>
+        <EntityType Name="tblMatches">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hosts" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Visitors" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Result" Type="nvarchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="tblUsers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Login" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="32" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_MatchID">
+          <End Role="tblMatches" Type="Self.tblMatches" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tblBets" Type="Self.tblBets" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMatches">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblBets">
+              <PropertyRef Name="MatchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserID">
+          <End Role="tblUsers" Type="Self.tblUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tblBets" Type="Self.tblBets" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUsers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblBets">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SpeedwayBettingModelStoreContainer">
+          <EntitySet Name="tblBets" EntityType="Self.tblBets" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMatches" EntityType="Self.tblMatches" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUsers" EntityType="Self.tblUsers" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_MatchID" Association="Self.FK_MatchID">
+            <End Role="tblMatches" EntitySet="tblMatches" />
+            <End Role="tblBets" EntitySet="tblBets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserID" Association="Self.FK_UserID">
+            <End Role="tblUsers" EntitySet="tblUsers" />
+            <End Role="tblBets" EntitySet="tblBets" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SpeedwayBettingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblBets">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="MatchID" Type="Int32" Nullable="false" />
+          <Property Name="Bet" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Points" Type="Int32" />
+          <NavigationProperty Name="tblMatches" Relationship="Self.FK_MatchID" FromRole="tblBets" ToRole="tblMatches" />
+          <NavigationProperty Name="tblUsers" Relationship="Self.FK_UserID" FromRole="tblBets" ToRole="tblUsers" />
+        </EntityType>
+        <EntityType Name="tblMatches">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hosts" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Visitors" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Result" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tblBets" Relationship="Self.FK_MatchID" FromRole="tblMatches" ToRole="tblBets" />
+        </EntityType>
+        <EntityType Name="tblUsers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="tblBets" Relationship="Self.FK_UserID" FromRole="tblUsers" ToRole="tblBets" />
+        </EntityType>
+        <Association Name="FK_MatchID">
+          <End Role="tblMatches" Type="Self.tblMatches" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tblBets" Type="Self.tblBets" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMatches">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblBets">
+              <PropertyRef Name="MatchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserID">
+          <End Role="tblUsers" Type="Self.tblUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tblBets" Type="Self.tblBets" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUsers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblBets">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SpeedwayBettingEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblBets" EntityType="Self.tblBets" />
+          <EntitySet Name="tblMatches" EntityType="Self.tblMatches" />
+          <EntitySet Name="tblUsers" EntityType="Self.tblUsers" />
+          <AssociationSet Name="FK_MatchID" Association="Self.FK_MatchID">
+            <End Role="tblMatches" EntitySet="tblMatches" />
+            <End Role="tblBets" EntitySet="tblBets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserID" Association="Self.FK_UserID">
+            <End Role="tblUsers" EntitySet="tblUsers" />
+            <End Role="tblBets" EntitySet="tblBets" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SpeedwayBettingModelStoreContainer" CdmEntityContainer="SpeedwayBettingEntities">
+          <EntitySetMapping Name="tblBets">
+            <EntityTypeMapping TypeName="SpeedwayBettingModel.tblBets">
+              <MappingFragment StoreEntitySet="tblBets">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="MatchID" ColumnName="MatchID" />
+                <ScalarProperty Name="Bet" ColumnName="Bet" />
+                <ScalarProperty Name="Points" ColumnName="Points" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMatches">
+            <EntityTypeMapping TypeName="SpeedwayBettingModel.tblMatches">
+              <MappingFragment StoreEntitySet="tblMatches">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Hosts" ColumnName="Hosts" />
+                <ScalarProperty Name="Visitors" ColumnName="Visitors" />
+                <ScalarProperty Name="Result" ColumnName="Result" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUsers">
+            <EntityTypeMapping TypeName="SpeedwayBettingModel.tblUsers">
+              <MappingFragment StoreEntitySet="tblUsers">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

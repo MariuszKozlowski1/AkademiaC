@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SpeedwayBettingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblBets">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="MatchID" Type="Int32" Nullable="false" />
+    <Property Name="Bet" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Points" Type="Int32" />
+    <NavigationProperty Name="tblMatches" Relationship="Self.FK_MatchID" FromRole="tblBets" ToRole="tblMatches" />
+    <NavigationProperty Name="tblUsers" Relationship="Self.FK_UserID" FromRole="tblBets" ToRole="tblUsers" />
+  </EntityType>
+  <EntityType Name="tblMatches">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Hosts" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Visitors" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Result" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblBets" Relationship="Self.FK_MatchID" FromRole="tblMatches" ToRole="tblBets" />
+  </EntityType>
+  <EntityType Name="tblUsers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="tblBets" Relationship="Self.FK_UserID" FromRole="tblUsers" ToRole="tblBets" />
+  </EntityType>
+  <Association Name="FK_MatchID">
+    <End Role="tblMatches" Type="Self.tblMatches" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblBets" Type="Self.tblBets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMatches">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblBets">
+        <PropertyRef Name="MatchID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserID">
+    <End Role="tblUsers" Type="Self.tblUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblBets" Type="Self.tblBets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUsers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblBets">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SpeedwayBettingEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblBets" EntityType="Self.tblBets" />
+    <EntitySet Name="tblMatches" EntityType="Self.tblMatches" />
+    <EntitySet Name="tblUsers" EntityType="Self.tblUsers" />
+    <AssociationSet Name="FK_MatchID" Association="Self.FK_MatchID">
+      <End Role="tblMatches" EntitySet="tblMatches" />
+      <End Role="tblBets" EntitySet="tblBets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserID" Association="Self.FK_UserID">
+      <End Role="tblUsers" EntitySet="tblUsers" />
+      <End Role="tblBets" EntitySet="tblBets" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
