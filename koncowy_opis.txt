@@ -1,13 +1,30 @@
+https://www.youtube.com/watch?v=z_2mZQe6Rhg&feature=youtu.be
+
 Autor: Mariusz Koz³owski mariusza.kozlowskiego@gmail.com
 
 Temat: Aplikacja do typowania wyników meczów ¿u¿lowych
 
 Aplikacja w technologii WPF z zastosowaniem wzorca projektowego MVVM.
 Zgodnie z wzorcem wystêpuj¹ 3 warstwy:
-1. Model - 
+1. Model:
+- model bazy danych(Entity Framework v.6.0.0.0) - baza danych MS SQL na serwerze lokalnym
+- klasa ModelOperations wykonuj¹ca zapytania do bazy danych
+- klasa UserWithPoints do prezentowania wyników na oknie
+- zgodnie z za³o¿eniami wzorca MVVM brak w Modelu referencji do ViewModelu
+2. Views
+- interace u¿ytkownika: MainWindow + 6 user controler'ów wstawianych w MainWindow w zale¿noœci od wykonywanej funkcjonalnoœci
+- zgodnie z za³o¿eniami wzorca MVVM code-behind pozostaje pusty
+3. ViewModels
+- zawieraj¹ w³aœciwoœci, które za pomoc¹ mechanizmu bindingu komunikuj¹ siê z widokami,
+dziêki temu implementacja funkcjonalnoœci aplikacji sprowadza siê do operowania na w³aœciwoœciach w klasach ViewModels
+- ka¿da w³aœciwoœæ we ViewModels korzysta z metody RaisePropertyChanged, która jest zaimplementowana w pomocniczej klasie
+NotificationObject. Dziêki niej zmiana stanu kontrolek na widoku znajduje swoje odzwierciedlenie w zmianie w³aœciwoœci we ViewModelu
+- dodatkowo we ViewModels zaimplementowane s¹ delegaty zdarzeñ korzystaj¹ce z metody DelegateCommand pozwalaj¹ce wywo³aæ metody odpowiadaj¹ce
+za realizacjê zdarzeñ wykonywanych na interfac'ie u¿ytkownika
+- w klasach pomocniczych jest tak¿e PasswordBoxAssistant, który pozwala na bindowanie PasswordBoxa. Standardowe bindowanie tej kontrolki
+nie jest mo¿liwe ze wzglêdów bezpieczeñstwa.
 
-
-Funkcjonalnoœci:
+W aplikacji zaimplementowane s¹ wszystkie funkcjonalnoœci wymienione w opisie wstêpnym:
 1. logowanie
 2. dodawanie u¿ytkowników
 3. dodawanie meczów
@@ -16,14 +33,9 @@ Funkcjonalnoœci:
 6. zliczanie punktów
 7. klasyfikacja
 
-Temat: Ksi¹¿ka adresowa
-Funkcjonalnoœci:
-1. dodawanie adresata
-2. usuwanie adresata
-3. edycja danych
-4. sortowanie
-5. filtrowanie
-6. import/eksport z/do excela
-7. generowanie korespondencji seryjnej dla adresatów z ksi¹¿ki
-8. zmiana wzoru listu do korespondencji seryjnej
-Wzorzec projektowy MVVM.
+Wystêpuj¹ 2 profile u¿ytkowników: administracyjny oraz zwyk³y.
+Dostêp administracyjny posiada u¿ytkownik o loginie admin i mo¿e on korzystaæ z funkcjonalnoœci dodawania meczów oraz dodawania wyników.
+Funkcjonalnoœci te nie s¹ dostêpne dla zwyk³ego u¿ytkownika.
+Zasady zliczania punktów:
+- prawid³owe wskazanie wyniku meczu - 3 pkt,
+- prawid³owe wskazanie zwyciêscy 1 pkt.
